@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #10375c;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +13,38 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+/* common */
+.heading-lv1 {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+
+.heading-lv2 {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc( 100% - 48px );
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    min-width: 205px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    height: 60px;
+    background: #2e80ce;
+    border-radius: 30px;
 }
