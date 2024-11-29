@@ -178,7 +178,7 @@ a {
     padding-bottom: 110px;
 }
 
-.hero__main {
+.main-hero {
     display: flex;
 }
 
@@ -313,6 +313,11 @@ a {
     fill: white;
 }
 
+rect,
+path {
+    transition: all ease 0.25s;
+}
+
 .services-content {
     display: flex;
     flex-direction: column;
@@ -327,6 +332,7 @@ a {
 }
 
 .services-content__desc {
+    --line-clamp: 2;
     color: #575f66;
     width: 308px;
     font-size: 1.6rem;
@@ -336,4 +342,95 @@ a {
 
 .services-btn {
     margin-top: 55px;
+}
+
+/* features */
+.features {
+    margin-top: 170px;
+    padding-top: 100px;
+    padding-bottom: 116px;
+    background: #f6fbff;
+}
+
+.features-header__desc {
+    width: 40%;
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.features-body {
+    margin-top: 86px;
+}
+
+.features-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.item-features--under {
+    width: 32%;
+    height: 402px;
+    border-radius: 4px;
+    background: #eaf6ff;
+    padding: 16px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.item-features--under:hover {
+    margin-top: -16px;
+    background: #2e80ce;
+}
+
+.item-features--under:hover .item-features__link {
+    color: #2e80ce;
+    font-weight: 400;
+}
+
+.item-features {
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    padding: 43px 58px;
+    overflow: hidden;
+}
+
+.item-features__title {
+    --line-clamp: 2;
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.item-features__desc {
+    --line-clamp: 3;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.item-features__link {
+    margin-top: 18px;
+    display: inline-block;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.item-features__link::before {
+    content: attr(title);
+    display: block;
+    font-weight: 400;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
