@@ -661,3 +661,129 @@ path {
     left: 70px;
     bottom: -4px;
 }
+/* blog */
+.blog {
+    margin-top: 170px;
+}
+
+.blog__main {
+    display: flex;
+}
+
+.blog__content {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog__heading {
+    --line-clamp: 2;
+    width: 470px;
+}
+
+.blog__link {
+    display: inline-block;
+    margin-top: 28px;
+    color: var(--primary-color);
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.56;
+    text-decoration-line: underline;
+    ext-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-underline-position: under;
+}
+
+.blog__control {
+    margin-top: 28px;
+    display: flex;
+    gap: 18px;
+}
+
+.blog__btn {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    border: 1px solid #2e80ce;
+    text-align: center;
+    background-color: #2e80ce;
+    color: #fff;
+    transition: all ease 0.25s;
+}
+
+.blog__btn:hover {
+    color: #2e80ce;
+    background-color: #fff;
+}
+
+.blog__btn--scale svg {
+    transform: scaleX(-1);
+}
+
+.blog-list {
+    width: 49%;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.item-blog {
+    border-radius: 12px;
+    border: 1px solid #fff;
+    transform: translate(-100%);
+}
+
+.item-blog:hover {
+    border: 1px solid #E8EBEE;
+}
+
+.item-blog:hover .item-blog__link {
+    color: var(--primary-color);
+}
+
+.item-blog__image {
+    width: 270px;
+    height: 172px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.item-blog__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.item-blog__content {
+    padding: 18px 22px;
+}
+
+.item-blog__title {
+    --line-clamp: 2;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.63;
+}
+
+.item-blog__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+}
+
+.item-blog__link {
+    margin-top: 12px;
+    display: inline-block;
+    color: #2e80ce;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
