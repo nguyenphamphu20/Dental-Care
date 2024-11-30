@@ -268,14 +268,14 @@ a {
 
 .services__body {
     margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
-    gap: 30px 130px;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
 }
 
 .services__images-gallery {
     width: 570px;
+    flex-grow: 1;
 }
 
 .services__img-item {
@@ -288,6 +288,8 @@ a {
 .services-list {
     margin-top: 35px;
     width: 470px;
+    justify-items: center;
+    flex-grow: 1;
 }
 
 .services-item {
@@ -371,7 +373,6 @@ path {
 .features-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(338px, 1fr));
-    justify-content: space-between;
     gap: 30px;
 }
 
