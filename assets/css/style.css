@@ -512,13 +512,27 @@ path {
 }
 
 .about-us__body {
+    position: relative;
     margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding-bottom: 74px;
+    display: flex;
     justify-content: space-between;
-    grid-template-rows: 1fr;
-    gap: 30px 30px;
-    grid-auto-flow: row;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.about-us__img {
+    width: 270px;
+    flex-shrink: 0;
+    transform: translate(-100%);
+}
+
+.about-us__img--bg {
+    background: #eaf6ff;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .about-us__img--thumb {
@@ -527,11 +541,16 @@ path {
     height: 318px;
     border-radius: 6px;
     object-fit: cover;
-    background: #eaf6ff;
+transition: all ease 0.25s;
+}
+
+.about-us__img--thumb:hover {
+    transform: scale(1.1);
 }
 
 .about-us__item-label {
     text-align: center;
+    margin-top: 12px;
 }
 
 .about-us__item-label:first-child {
@@ -546,4 +565,38 @@ path {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.86;
+}
+
+.about-us__control {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us__btn--previous svg {
+    transform: scaleX(-1);
+}
+
+.about-us__btn--next,
+.about-us__btn--previous {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    background-color: #2e80ce;
+    border: 1px solid #2e80ce;
+    border-radius: 50%;
+    text-align: center;
+    transition: all ease 0.25s;
+}
+
+:is(.about-us__btn--next, .about-us__btn--previous):hover {
+    color: #575f66;
+    border: 1px solid #575f66;
+    background-color: #fff;
 }
