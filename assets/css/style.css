@@ -43,6 +43,10 @@ a {
     margin-right: auto;
 }
 
+a {
+    color: currentColor;
+}
+
 .btn {
     display: inline-flex;
     min-width: 205px;
@@ -804,6 +808,21 @@ path {
     text-align: center;
 }
 
+.cta__heading {
+    position: relative;
+}
+
+.cta__heading::after {
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .cta__desc {
     width: 617px;
     color: #575f66;
@@ -815,4 +834,113 @@ path {
 
 .cta__btn {
     min-width: 205px;
+}
+/* footer */
+footer {
+    margin-top: 170px;
+    padding-top: 100px;
+    background: var(--primary-color);
+}
+
+.footer-header {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 78px;
+    border-bottom: 1px solid #406181;
+    padding-bottom: 28px;
+}
+
+.footer-logan__logo {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.footer__title {
+    padding-bottom: 10px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__desc {
+    margin-top: 10px;
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+div:nth-child(2):has(> .footer__title) {
+    margin-top: 28px;
+}
+
+.footer-social__group-social {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social__btn {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #fff;
+    color: #2e80ce;
+    transition: all ease 0.2s;
+}
+
+.footer-social__btn:hover {
+    border: 1px solid #2e80ce;
+    color: #fff;
+    background: #2e80ce;
+}
+
+.footer-social__group-subscribe {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__desc--fixed {
+    width: 273px;
+}
+
+.footer__input {
+    margin-top: 0;
+    display: block;
+    padding: 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: var(--primary-color);
+}
+
+.footer__btn {
+    border-radius: 4px;
+    height: 46px;
+    min-width: 108px;
+    padding: 10px 21px;
+}
+
+.footer-bottom__copyright {
+    display: block;
+    padding: 28px 0 42px;
+    color: #aab3ba;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.86;
 }
