@@ -808,6 +808,21 @@ path {
     text-align: center;
 }
 
+.cta__heading {
+    position: relative;
+}
+
+.cta__heading::after {
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .cta__desc {
     width: 617px;
     color: #575f66;
