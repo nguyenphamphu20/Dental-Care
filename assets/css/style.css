@@ -738,7 +738,7 @@ path {
 }
 
 .item-blog:hover {
-    border: 1px solid #E8EBEE;
+    border: 1px solid #e8ebee;
 }
 
 .item-blog:hover .item-blog__link {
@@ -786,4 +786,33 @@ path {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: normal;
+}
+
+/* call to action */
+.cta {
+    margin-top: 170px;
+}
+
+.main-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 38px;
+    background: #f6fbff;
+    height: 452px;
+    text-align: center;
+}
+
+.cta__desc {
+    width: 617px;
+    color: #575f66;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.cta__btn {
+    min-width: 205px;
 }
