@@ -527,6 +527,10 @@ path {
     transform: translate(-100%);
 }
 
+.about-us__img:hover .about-us__img--thumb {
+    transform: scale(1.1);
+}
+
 .about-us__img--bg {
     background: #eaf6ff;
     height: 350px;
@@ -542,10 +546,6 @@ path {
     border-radius: 6px;
     object-fit: cover;
     transition: all ease 0.25s;
-}
-
-.about-us__img--thumb:hover {
-    transform: scale(1.1);
 }
 
 .about-us__item-label {
